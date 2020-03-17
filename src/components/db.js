@@ -12,8 +12,9 @@ class FirebaseWrapper{
         appId: "1:271580976039:web:9d723c4c7e0fb7f3e39c82",
         measurementId: "G-FE1SJPT7K7"
     };
-
-    firebase.initializeApp(firebaseConfig);
+    if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig)
+      }
     this.db = firebase.firestore();
     this.auth = firebase.auth();
     this.auth.onAuthStateChanged(this.checkLogin)

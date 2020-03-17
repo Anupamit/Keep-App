@@ -5,7 +5,7 @@ function Header() {
     <header>
       <h1>
         <BorderColorIcon />
-        Keeper
+        Keep
       </h1>
     </header>
   );
