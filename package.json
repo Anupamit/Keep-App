@@ -1,12 +1,13 @@
 {
   "name": "keeper-app-part-1-completed",
   "version": "1.0.0",
-  "description": "",
+  "description": "It use as notes keeping app fully based on React-js",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
+    "firebase": "^7.11.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "3.2.0"
@@ -25,5 +26,15 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anupamit/Keep-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anupamit/Keep-App/issues"
+  },
+  "homepage": "https://keep-anupamit.web.app/"
 }

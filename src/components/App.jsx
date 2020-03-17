@@ -3,22 +3,28 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
+import FirebaseWrapper from "./db";
 
 function App() {
+  const fb = new FirebaseWrapper()
   const [notes, setNotes] = useState([]);
 
   function addNote(newNote) {
-    setNotes(prevNotes => {
-      return [...prevNotes, newNote];
-    });
+    // TODO add data to firebase
+
+    fb.insert('notes', newNote)
+    // setNotes(prevNotes => {
+    //   return [...prevNotes, newNote];
+    // });
   }
 
   function deleteNote(id) {
-    setNotes(prevNotes => {
-      return prevNotes.filter((noteItem, index) => {
-        return index !== id;
-      });
-    });
+    fb.delete('notes', id)
+    // setNotes(prevNotes => {
+    //   return prevNotes.filter((noteItem, index) => {
+    //     return index !== id;
+    //   });
+    // });
   }
 
   return (
