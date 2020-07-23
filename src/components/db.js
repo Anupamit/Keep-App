@@ -74,7 +74,7 @@ class FirebaseWrapper{
 
   checkLogin(user){
     if(user){
-      console.log('anp user', user.email, user);
+      console.log('anupam user', user.email, user);
     }
   }
 
