@@ -4,7 +4,7 @@
   "description": "It use as notes keeping app fully based on React-js",
   "keywords": [],
   "main": "src/index.js",
-  "homepage": "https://anupamit.github.io/keeper",
+  "homepage": "https://Anupamit.github.io/keep-app",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "npm build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
 
   },
